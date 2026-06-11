@@ -5,6 +5,7 @@ async function getData(url) {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    console.log("Response JSON:", await response.clone().json());
 
     return response.json();
   } catch (error) {
