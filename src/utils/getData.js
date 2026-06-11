@@ -8,6 +8,7 @@ async function getData(url) {
     console.log("Response JSON:", await response.clone().json());
     console.log("Response JSON:2", await response.clone().json());
     console.log("Response JSON:3", await response.clone().json());
+    console.log("Response JSON:4", await response.clone().json());
 
     
 
