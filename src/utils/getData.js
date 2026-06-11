@@ -5,7 +5,11 @@ async function getData(url) {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-    console.log("Response of JSON:", await response.clone().json());
+    console.log("Response JSON:", await response.clone().json());
+    console.log("Response JSON:2", await response.clone().json());
+    console.log("Response JSON:3", await response.clone().json());
+
+    
 
     return response.json();
   } catch (error) {
